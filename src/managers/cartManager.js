@@ -18,7 +18,10 @@ class CartManager {
             const data = await fs.readFile(this.path, 'utf-8');
             return JSON.parse(data);
         } catch (error) {
-            return [];
+            if (error.code === 'ENOENT'){
+                return [];
+            }
+            throw error;
         }
     }
 

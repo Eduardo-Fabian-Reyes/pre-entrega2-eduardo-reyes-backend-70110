@@ -20,11 +20,11 @@
   {
     "id": "5",
     "title": "Ramones",
-    "description": "Álbum de estudio de Ramones",
-    "price": 21.99,
-    "img": "ramones.jpg",
-    "code": "PUNK005",
-    "stock": 14
+    "description": "Primer Album de los Ramones",
+    "price": 12.99,
+    "img": "ramones-1974",
+    "code": "punk5678",
+    "stock": 150
   },
   {
     "id": "6",
@@ -72,12 +72,12 @@
     "stock": 10
   },
   {
-    "id": 1,
+    "id": "1",
     "title": "Glown On",
     "description": "Album musical de Turnstile",
-    "price": 150,
+    "price": 1550,
     "img": "turnstile-glow-on-cover",
     "code": "1",
-    "stock": 60
+    "stock": 6
   }
 ]

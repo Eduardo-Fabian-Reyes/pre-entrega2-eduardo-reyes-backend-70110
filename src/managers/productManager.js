@@ -48,7 +48,7 @@ class ProductManager {
     }
 
     async updateProduct(id, updatedProduct) {
-        const products = await this.loadProducts();
+        const products = await this.getProducts();
         const index = products.findIndex(product => product.id === id.toString());
         if (index !== -1) {
             products[index] = { ...products[index], ...updatedProduct };
