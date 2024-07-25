@@ -42,21 +42,20 @@ class ProductManager {
         }
     }
 
-    async getProductById(id) {
+    async getById(id) {
         const products = await this.getProducts();
         return products.find(product => product.id === id);
     }
 
     async updateProduct(id, updatedProduct) {
-        const products = await this.getProducts();
-        const index = products.findIndex(product => product.id === id);
-
+        const products = await this.loadProducts();
+        const index = products.findIndex(product => product.id === id.toString());
         if (index !== -1) {
             products[index] = { ...products[index], ...updatedProduct };
             await this.saveProducts(products);
             return products[index];
         } else {
-            throw new Error("Producto no encontrado");
+            return null;
         }
     }
 
@@ -68,9 +67,12 @@ class ProductManager {
             const [deletedProduct] = products.splice(index, 1);
             await this.saveProducts(products);
             return deletedProduct;
-        } else {
-            throw new Error("Producto no encontrado");
-        }
+        } 
+        return null
+    }
+
+    generateId(){
+        return Date.now().toString();
     }
 
     async saveProducts(products) {

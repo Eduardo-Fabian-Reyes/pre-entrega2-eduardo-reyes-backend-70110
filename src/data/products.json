@@ -1,23 +1,5 @@
 [
-    {
-    "id": "1",
-    "title": "Never Mind the Bollocks",
-    "description": "Álbum de estudio de Sex Pistols",
-    "price": 20.99,
-    "img": "never_mind_the_bollocks.jpg",
-    "code": "PUNK001",
-    "stock": 15
-    },
-    {
-    "id": "2",
-    "title": "London Calling",
-    "description": "Álbum de estudio de The Clash",
-    "price": 22.99,
-    "img": "london_calling.jpg",
-    "code": "PUNK002",
-    "stock": 10
-    },
-    {
+  {
     "id": "3",
     "title": "Fresh Fruit for Rotting Vegetables",
     "description": "Álbum de estudio de Dead Kennedys",
@@ -25,8 +7,8 @@
     "img": "fresh_fruit.jpg",
     "code": "PUNK003",
     "stock": 8
-    },
-    {
+  },
+  {
     "id": "4",
     "title": "Dookie",
     "description": "Álbum de estudio de Green Day",
@@ -34,8 +16,8 @@
     "img": "dookie.jpg",
     "code": "PUNK004",
     "stock": 12
-    },
-    {
+  },
+  {
     "id": "5",
     "title": "Ramones",
     "description": "Álbum de estudio de Ramones",
@@ -43,8 +25,8 @@
     "img": "ramones.jpg",
     "code": "PUNK005",
     "stock": 14
-    },
-    {
+  },
+  {
     "id": "6",
     "title": "Bad Religion",
     "description": "Álbum de estudio de Bad Religion",
@@ -52,8 +34,8 @@
     "img": "bad_religion.jpg",
     "code": "PUNK006",
     "stock": 7
-    },
-    {
+  },
+  {
     "id": "7",
     "title": "The Offspring",
     "description": "Álbum de estudio de The Offspring",
@@ -61,8 +43,8 @@
     "img": "the_offspring.jpg",
     "code": "PUNK007",
     "stock": 13
-    },
-    {
+  },
+  {
     "id": "8",
     "title": "Milo Goes to College",
     "description": "Álbum de estudio de Descendents",
@@ -70,8 +52,8 @@
     "img": "milo_goes_to_college.jpg",
     "code": "PUNK008",
     "stock": 9
-    },
-    {
+  },
+  {
     "id": "9",
     "title": "Out of Step",
     "description": "Álbum de estudio de Minor Threat",
@@ -79,8 +61,8 @@
     "img": "out_of_step.jpg",
     "code": "PUNK009",
     "stock": 11
-    },
-    {
+  },
+  {
     "id": "10",
     "title": "Energy",
     "description": "Álbum de estudio de Operation Ivy",
@@ -88,5 +70,14 @@
     "img": "energy.jpg",
     "code": "PUNK010",
     "stock": 10
-    }
+  },
+  {
+    "id": 1,
+    "title": "Glown On",
+    "description": "Album musical de Turnstile",
+    "price": 150,
+    "img": "turnstile-glow-on-cover",
+    "code": "1",
+    "stock": 60
+  }
 ]

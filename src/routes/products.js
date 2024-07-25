@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:pid', async (req, res) => {
-    const product = await productManager.getProductById(parseInt(req.params.pid));
+    const product = await productManager.getById(req.params.pid);
     if (product) {
         res.json(product);
     } else {
@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:pid', async (req, res) => {
-    const updatedProduct = await productManager.updateProduct(parseInt(req.params.pid), req.body);
+    const updatedProduct = await productManager.updateProduct(req.params.pid, req.body);
     if (updatedProduct) {
         res.json(updatedProduct);
     } else {
@@ -32,7 +32,7 @@ router.put('/:pid', async (req, res) => {
 });
 
 router.delete('/:pid', async (req, res) => {
-    const deletedProduct = await productManager.deleteProduct(parseInt(req.params.pid));
+    const deletedProduct = await productManager.deleteProduct(req.params.pid);
     if (deletedProduct) {
         res.json(deletedProduct);
     } else {
