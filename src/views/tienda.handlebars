@@ -1,0 +1,11 @@
+<h2>Tienda</h2>
+
+{{#each arrayProductos }}
+    <div>
+        <h3> Nombre: {{this.title}} </h3>
+        <p> Descripcion: {{this.description}}</p>
+        <p> Precio: {{this.price}} </p>
+        <button> Comprar </button>
+    </div>
+
+{{/each}}
