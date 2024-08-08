@@ -45,3 +45,4 @@ form.addEventListener('submit', (e) => {
     socket.emit('nuevoProducto', { title, price });
 });
 
+
