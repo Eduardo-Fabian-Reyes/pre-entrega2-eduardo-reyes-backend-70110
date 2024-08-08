@@ -21,6 +21,9 @@ router.get("/contacto", (req, res) => {
     res.render("contacto", {titulo:"Contacto"})
 });
 
+router.get("/realtimeproducts", (req, res) => {
+    res.render("realTimeProducts", {titulo: "Productos en Tiempo Real"}); 
+});
 
 
 
